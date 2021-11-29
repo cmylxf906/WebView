@@ -18,8 +18,7 @@
     
 ## 创建WebViewActivity(用于启动的Activity)，代码如下：
 
-   public class WebViewActivity extends AppCompatActivity {
-
+    public class WebViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,16 +40,17 @@
 
             </intent-filter>
         </activity>
+        
 ## 修改activity_main.xml
 
- <EditText
+    <EditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/editText"
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent"
     app:layout_constraintBottom_toTopOf="@id/bn" />
- <Button
+    <Button
     android:id="@+id/bn"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -61,10 +61,10 @@
     app:layout_constraintTop_toTopOf="parent" />
     
 ## 修改MainActivity 
-  public class MainActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+  
+        public class MainActivity extends AppCompatActivity {
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
